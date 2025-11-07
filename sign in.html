@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LS ELECTRONIC | SIGN UP</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            height: 100vh;
+            background: linear-gradient(45deg, black, #a1dba1);
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header{
+            padding: 0 2rem;
+            background: linear-gradient(45deg,rgb(5, 5, 5),rgb(143, 203, 169));
+            
+        }
+
+        .navbar{
+            width: 100%;
+            height: 60px;
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            
+        }
+
+        .logo img{
+            width: 40px;
+            cursor: pointer;
+        }
+
+        .links{
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+            
+        }
+
+        a{
+            text-decoration: none;
+            color: white;
+            font-size: 1rem;
+        }
+        a:hover{ color: orange; }
+
+        .search-box{
+            display: flex;
+            align-items: center;
+            background: white;
+            padding: 4px 10px;
+            border-radius: 25px;
+        }
+
+        .search-box input{
+            border: none;
+            outline: none;
+            background: none;
+            padding: 5px;
+        }
+
+        .Login_btn{
+            background-color: aquamarine;
+            color: black;
+            border-radius: 20px;
+            padding: 5px 12px;
+            font-weight: bold;
+        }
+
+        /* SIGNUP FORM */
+        .signup-box{
+            width: 380px;
+            background: rgba(255,255,255,0.18);
+            padding: 35px;
+            border-radius: 12px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.4);
+            margin: auto;
+            margin-top: 70px;
+            color: white;
+        }
+
+        .signup-box h2{
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .signup-box input{
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            border-radius: 6px;
+            border: none;
+            outline: none;
+        }
+
+        .otp-row{
+            display: flex;
+            gap: 10px;
+        }
+
+        .otp-row button{
+            padding: 12px;
+            border: none;
+            border-radius: 6px;
+            background: #ffcb24;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .signup-box button{
+            width: 100%;
+            padding: 12px;
+            background: #ffbb00;
+            border: none;
+            font-size: 16px;
+            font-weight: bold;
+            color: black;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .signup-box button:hover,
+        .otp-row button:hover{
+            background: orange;
+        }
+
+        @media(max-width:480px){
+            .signup-box{ width: 90%; }
+        }
+
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="letter-ls-logo-with-luxury-gold-template-elegance-logo-template-vector-removebg-preview.png" alt="logo">
+            </a>
+        </div>
+
+        <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="https://www.flipkart.com/" target="_blank">Order</a></li>
+            <li><a href="https://www.flipkart.com/viewcart?exploreMode=true&preference=FLIPKART" target="_blank">Cart</a></li>
+            <li><a href="contact.html">Contacts</a></li>
+        </ul>
+
+        <div class="search-box">
+            <input type="text" placeholder="Search products...">
+        </div>
+
+        <a href="login.html" class="Login_btn">Login</a>
+    </div>
+</header>
+
+<div class="signup-box">
+    <h2>Create Account</h2>
+
+    <form>
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Gmail" required>
+        <input type="tel" placeholder="Phone Number" required>
+
+        <div class="otp-row">
+            <input type="text" placeholder="Type OTP" required style="flex:1;">
+            <button type="button" onclick="alert('OTP Sent To Your Phone')">Send OTP</button>
+        </div>
+
+        <input type="password" placeholder="Password" required>
+        <input type="password" placeholder="Re-Type Password" required>
+
+        <button type="submit">Sign Up</button>
+        <br>
+       
+    </form>
+    <br>
+    <div style="text-align: center;">
+        <p>If You Have An Account -
+            <a href="login.html" style="text-decoration: underline;">Login</a>
+        </p>
+    </div>
+</div>
+
+</body>
+</html>
